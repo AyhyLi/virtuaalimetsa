@@ -1,0 +1,251 @@
+h1, h2, p{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image:url("../images/pohja.png");
+    background-repeat:no-repeat;    
+}
+
+#desk, #mob {
+    width: 400px;
+	-webkit-font-smoothing: antialiased;
+	color: #000000;
+    position:relative;
+    top:177px;
+    left:15px;
+}
+
+#desk{
+    padding:0 20px 20px 30px;
+    height:667px;
+    overflow:auto;
+    -ms-overflow-style: none;  
+}
+
+#desk::-webkit-scrollbar{
+    display:none;
+}
+
+.box{
+    border-bottom:1px dotted #000;
+    padding-bottom:40px;
+    padding-top:10px;
+}
+
+.fa-question-circle{
+    font-size:18px;
+}
+
+.fa-question-circle:hover{
+    cursor:pointer;
+}
+
+#stage {
+	margin-bottom: 25px;
+    height: 100px;
+}
+
+.ui-slider-handle:before {
+	content: url(../images/slider-handle.svg);
+}
+
+.virtuaalimetsa .ui-slider-handle {
+	border: 0;
+	background: 0;
+	width: 2.5em;
+	height: auto;
+    cursor: ew-resize;
+	top: -1em;
+	outline: none;
+	margin-left: -1.3em;
+}
+
+.items-nogrow .nogrow {
+	width: 10%;
+}
+
+.items-nogrow {
+	position: relative;
+    bottom: 50px;
+}
+
+.items-grow .grow {
+	position: relative;
+	float: left;
+}
+
+.left-5 {
+	left: -5px;
+}
+
+.left-15 {
+	left: -15px;
+}
+
+#mob, .hide, .info, .infoM{
+    display:none;
+}
+
+#pohja{
+    position:relative;
+    top:758px;
+    left:-63px;
+}
+
+.koko{
+    width:350px;
+    height:150px;
+}
+
+button{
+    color:rgb(143,212,0);
+    background-color:rgb(54,53,52);
+    border-radius:5px;
+    border:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:7px;
+    font-size:11.5px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.info{
+    background-color:#b8e671;
+    padding:10px;
+    margin-top:20px;
+}
+
+.in{
+    background-color:#b8e671;
+    padding:10px;
+    margin-top:10px;
+}
+
+.in::first-letter{
+    font-size:25px;
+    letter-spacing:-0.35px;
+}
+
+table{
+    text-align:left;
+}
+
+@media only screen and (max-width:500px){
+    body{
+        box-sizing:border-box;
+        width:100%;
+        margin:0;
+        background-image:url("../images/pohja_over_mob.png");
+        background-size:100%;
+        background-color:#89d612;
+        font-family:Arial;
+    }
+    
+    h1{
+        font-size:5vw;
+        padding-left:13%;
+        padding-bottom:15px;
+    }
+    
+    table{
+        position:relative;
+        left:20%;
+        font-size:15px;
+    }
+    
+    #desk{
+        display:none;
+    }
+    
+    #mob{
+        display:block;
+        position:relative;
+        top:160px;
+        margin-bottom:100px;
+        width:100%;
+        left:0px;
+    }
+    
+    #wrapper{
+        margin-top:10px;
+        padding:10px;
+    }
+    
+    #wrapper h1{
+        margin:10px 0;
+    }
+    
+    .more{
+        display:none;
+    }
+    
+    .fa-question-circle{
+        float:right;
+    }
+    
+    .w70{
+        width:80%;
+        margin-left:-7%;
+    }
+    
+    .color{
+        background-color:#b8e671;
+    }
+    
+    td, th{
+        padding:5px;
+    }
+    
+    #sliderWrapper{
+        width:87%;
+        margin-left:25px;
+    }
+    
+    #sliderM{
+        margin-top:40px;
+    }
+    
+    .in{
+        width:95%;
+        border:none;
+        padding:10px;
+        margin-top:20px;
+        background-color:#b8e671;
+    }
+    
+    .in h2{
+        font-size:16px;
+        margin-bottom:5px;
+    }
+    
+    .in::first-letter{
+        font-size:16px;
+        letter-spacing:0;
+    }
+    
+    .in p{
+        padding-left:20px;
+        font-size:15px;
+    }
+    
+    button{
+        color:#FFF;
+        border-radius:0px;
+        text-transform:none;
+        font-size:4.5vw;
+        padding:15px;
+        border:2px solid #b2b2b3;
+    }
+    
+    .over{
+        width:100%;
+        position:fixed;
+        bottom:0px;
+
+    }
+}

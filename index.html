@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+	<title>Virtuaalimetsä</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no,initial-scale=1.0,width=device-width"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="robots" content="noindex">
+	<link rel='stylesheet prefetch' href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+<body class="virtuaalimetsa">
+    <div id="desk">
+        <div id="varhaishoito" class="box">
+            <table style="float:left;margin-right:98px;">
+                <tr>
+                    <th style="padding-right:60px">Hoitotyö</th>
+                    <th>Taimikon varhaishoito</th>
+                </tr>
+            </table>
+            <a class="kysymys"><i class="far fa-question-circle"></i></a>
+            <div class="info">
+                <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+            </div>
+
+            <div id="stage" class="koko">
+                <div class="items-grow">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                </div>
+                <div class="items-nogrow">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                </div>
+            </div>
+            <div id="sliderWrapper">
+                <div id="slider"></div>
+            </div>
+            <img src="assets/images/viivat.png" class="desk" style="width:350px;margin-top:20px;">
+            <br/>
+            <button style="float:right;margin-top:10px;" class="nayta">Näytä selvennys</button>
+            <div class="in hide">
+                <p>Varhaishoito varmistaa uudistamisen onnistumisen ja vähentää kasvatettavien taimien kilpailua kasvutilasta. Ajallaan tehty varhaishoito takaa taimikon nopeamman kehityksen ja takaa paremman tuoton uudistamiseen käytetylle rahalle. Tekemättä jätetty varhaishoito heikentää taimikon kasvua ja nostaa hoitokustannuksia tulevaisuudessa.</p> 
+            </div>
+            <br/>
+            <table>
+                <tr class="color">
+                    <th>Lisätiedot</th>
+                    <td></td>
+                </tr>
+                <tr class="color">
+                    <th>Vuosi</th>
+                    <td>2020</td>
+                </tr>
+                <tr class="color">
+                    <th>Pinta-ala</th>
+                    <td>1.3 ha</td>
+                </tr>
+                <tr class="color">
+                    <th>Menoarvio</th>
+                    <td>470 €</td>
+                </tr>
+                <tr class="color">
+                    <th>Toteutusajankohta</th>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="float:right">
+                <button>Kuittaa suoritetuksi</button>
+                <button>Poista toimenpide</button>
+                <button>Muokkaa</button>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="taimikonhoito" class="box">
+            <table style="float:left;margin-right:153px;">
+                <tr>
+                    <th style="padding-right:60px">Hoitotyö</th>
+                    <th>Taimikonhoito</th>
+                </tr>
+            </table>
+            <a class="kysymys"><i class="far fa-question-circle"></i></a>
+            <div class="info">
+                <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+            </div>
+
+            <div id="stage" class="koko">
+                <div class="items-grow">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                </div>
+                <div class="items-nogrow">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                </div>
+            </div>
+            <div id="sliderWrapper">
+                <div id="slider"></div>
+            </div>
+            <img src="assets/images/viivat.png" class="desk" style="width:350px;margin-top:20px;">
+            <br/>
+            <button style="float:right;margin-top:10px;" class="nayta">Näytä selvennys</button>
+            <div class="in hide">
+                <p>Taimikonhoidossa poistetaan huonolaatuiset taimet, jolloin taimikko kasvaa elinvoimaisempana ja se takaa paremman kasvun. Hoitamattoman taimikon elinvoimaisuus taas laskee ja se on alttiimpi tuhoille. Ajallaan hoidetusta taimikosta kertyy järeämpää puuta ensiharvennuksella, jolloin tuotto paranee.</p>
+            </div>
+            <br/>
+            <table>
+                <tr class="color">
+                    <th>Lisätiedot</th>
+                    <td></td>
+                </tr>
+                <tr class="color">
+                    <th>Vuosi</th>
+                    <td>2020</td>
+                </tr>
+                <tr class="color">
+                    <th>Pinta-ala</th>
+                    <td>1.3 ha</td>
+                </tr>
+                <tr class="color">
+                    <th>Menoarvio</th>
+                    <td>470 €</td>
+                </tr>
+                <tr class="color">
+                    <th>Toteutusajankohta</th>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="float:right">
+                <button>Kuittaa suoritetuksi</button>
+                <button>Poista toimenpide</button>
+                <button>Muokkaa</button>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="ensiharvennus" class="box">
+            <table style="float:left;margin-right:150px;">
+                <tr>
+                    <th style="padding-right:60px">Hoitotyö</th>
+                    <th>Ensiharvennus</th>
+                </tr>
+            </table>
+            <a class="kysymys"><i class="far fa-question-circle"></i></a>
+            <div class="info">
+                <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+            </div>
+
+            <div id="stage" class="koko">
+                <div class="items-grow">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                </div>
+                <div class="items-nogrow">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                </div>
+            </div>
+            <div id="sliderWrapper">
+                <div id="slider"></div>
+            </div>
+            <img src="assets/images/viivat.png" class="desk" style="width:350px;margin-top:20px;">
+            <br/>
+            <button style="float:right;margin-top:10px;" class="nayta">Näytä selvennys</button>
+            <div class="in hide">
+                <p>Ensiharvennuksen tarkoituksena on varmistaa puiden kasvutila ja järeytyminen. Näin varmistetaan puuston elinvoimaisuus ja vähennetään alttiutta lumi-ja hyönteistuhoille. Ensiharvennuksessa tähdätään laadukkaaseen puustoon, joka järeydyttyään parantaa hakkuutuloja tulevaisuudessa.</p>
+            </div>
+            <br/>
+            <table>
+                <tr class="color">
+                    <th>Lisätiedot</th>
+                    <td></td>
+                </tr>
+                <tr class="color">
+                    <th>Vuosi</th>
+                    <td>2020</td>
+                </tr>
+                <tr class="color">
+                    <th>Pinta-ala</th>
+                    <td>1.3 ha</td>
+                </tr>
+                <tr class="color">
+                    <th>Menoarvio</th>
+                    <td>470 €</td>
+                </tr>
+                <tr class="color">
+                    <th>Toteutusajankohta</th>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="float:right">
+                <button>Kuittaa suoritetuksi</button>
+                <button>Poista toimenpide</button>
+                <button>Muokkaa</button>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="harvennus" class="box">
+            <table style="float:left;margin-right:177px;">
+                <tr>
+                    <th style="padding-right:60px">Hoitotyö</th>
+                    <th>Harvennus</th>
+                </tr>
+            </table>
+            <a class="kysymys"><i class="far fa-question-circle"></i></a>
+            <div class="info">
+                <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+            </div>
+
+            <div id="stage" class="koko">
+                <div class="items-grow">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                </div>
+                <div class="items-nogrow">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                </div>
+            </div>
+            <div id="sliderWrapper">
+                <div id="slider"></div>
+            </div>
+            <img src="assets/images/viivat.png" class="desk" style="width:350px;margin-top:20px;">
+            <br/>
+            <button style="float:right;margin-top:10px;" class="nayta">Näytä selvennys</button>
+            <div class="in hide">
+                <p>Harvennuksessa poistetaan puustoa, jolloin varmistetaan jäävän puuston elinvoimaisuus. Harvennustarpeeseen vaikuttaa metsänomistajan tavoitteet ja metsän hoitohistoria. Harvennukset kannattaa tehdä yleisesti käytettyjen harvennusmallien mukaan, jotka perustuvat pohjapinta-alaan ja valtapituuteen. Harvennusta kannattaa suunnitella oman metsäasiantuntijan kanssa!</p>
+            </div>
+            <br/>
+            <table>
+                <tr class="color">
+                    <th>Lisätiedot</th>
+                    <td></td>
+                </tr>
+                <tr class="color">
+                    <th>Vuosi</th>
+                    <td>2020</td>
+                </tr>
+                <tr class="color">
+                    <th>Pinta-ala</th>
+                    <td>1.3 ha</td>
+                </tr>
+                <tr class="color">
+                    <th>Menoarvio</th>
+                    <td>470 €</td>
+                </tr>
+                <tr class="color">
+                    <th>Toteutusajankohta</th>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="float:right">
+                <button>Kuittaa suoritetuksi</button>
+                <button>Poista toimenpide</button>
+                <button>Muokkaa</button>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="uudistamis" class="box">
+            <table style="float:left;margin-right:123px;">
+                <tr>
+                    <th style="padding-right:60px">Hoitotyö</th>
+                    <th>Uudistamishakkuu</th>
+                </tr>
+            </table>
+            <a class="kysymys"><i class="far fa-question-circle"></i></a>
+            <div class="info">
+                <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+            </div>
+
+            <div id="stage" class="koko">
+                <div class="items-grow">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                    <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                </div>
+                <div class="items-nogrow">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                    <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                </div>
+            </div>
+            <div id="sliderWrapper">
+                <div id="slider"></div>
+            </div>
+            <img src="assets/images/viivat.png" class="desk" style="width:350px;margin-top:20px;">
+            <br/>
+            <button style="float:right;margin-top:10px;" class="nayta">Näytä selvennys</button>
+            <div class="in hide">
+                <p>Uudistamishakkuu kannattaa tehdä metsänomistajan tarpeiden mukaan. Viimeistään se kannattaa tehdä ennen kuin puuston arvokasvu laskee, jolloin puuston rahallinen arvo alenee. Uudistamishakkuusta poistetaan puusto, jotta metsän kasvatus voidaan aloittaa alusta. Metsä Group käyttää hakkuissaan maailmanlaajuisia sertifikaatteja, jotka takaavat metsien kestävän käytön. Uudistamishakkuu ja tulevan taimikon perustaminen kannattaa suunnitella oman metsäasiantuntijan kanssa.</p>
+            </div>
+            <br/>
+            <table>
+                <tr class="color">
+                    <th>Lisätiedot</th>
+                    <td></td>
+                </tr>
+                <tr class="color">
+                    <th>Vuosi</th>
+                    <td>2020</td>
+                </tr>
+                <tr class="color">
+                    <th>Pinta-ala</th>
+                    <td>1.3 ha</td>
+                </tr>
+                <tr class="color">
+                    <th>Menoarvio</th>
+                    <td>470 €</td>
+                </tr>
+                <tr class="color">
+                    <th>Toteutusajankohta</th>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+            <div style="float:right">
+                <button>Kuittaa suoritetuksi</button>
+                <button>Poista toimenpide</button>
+                <button>Muokkaa</button>
+            </div>
+        </div>
+    </div> 
+<!--***********************MOBIILI*************************--> 
+    <div id="mob">
+        <div id="varhaishoitoM">
+            <h1 class="paina">Taimikon varhaishoito</h1>
+            <div id="wrapper" class="more">
+                <table class="w70">
+                    <tr>
+                        <td></td>
+                        <td>Tukki</td>
+                        <td>Kuitu</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Mänty</td>
+                        <td>0.2 m/ha</td>
+                        <td>0.1 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Kuusi</td>
+                        <td>2.7 m/ha</td>
+                        <td>7.2 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Raudaskoivu</td>
+                        <td>6 m/ha</td>
+                        <td>43.3 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Haapa</td>
+                        <td>0.1 m/ha</td>
+                        <td>2.7 m/ha</td>
+                    </tr>
+                </table>
+                <h1 class="paina">Lisätietoa toimenpiteestä</h1>
+                <div class="more">
+                    <a class="kysymysM"><i class="far fa-question-circle"></i></a>
+                    <div class="infoM">
+                        <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+                    </div>
+                    <div id="stage" class="koko">
+                        <div class="items-grow">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                        </div>
+                        <div class="items-nogrow">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                        </div>
+                    </div>
+                    <div id="sliderWrapper">
+                        <div id="sliderM"></div>
+                    </div>
+                    <div class="in">
+                    <h2>Selvennys toimenpiteestä</h2>
+                    <p>Varhaishoito varmistaa uudistamisen onnistumisen ja vähentää kasvatettavien taimien kilpailua kasvutilasta. Ajallaan tehty varhaishoito takaa taimikon nopeamman kehityksen ja takaa paremman tuoton uudistamiseen käytetylle rahalle. Tekemättä jätetty varhaishoito heikentää taimikon kasvua ja nostaa hoitokustannuksia tulevaisuudessa.</p> 
+                </div>
+                <br/>
+                <table>
+                    <tr class="color">
+                        <th>Lisätiedot</th>
+                        <td></td>
+                    </tr>
+                    <tr class="color">
+                        <th>Vuosi</th>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Pinta-ala</th>
+                        <td>1.3 ha</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Menoarvio</th>
+                        <td>470 €</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Toteutusajankohta</th>
+                        <td></td>
+                    </tr>
+                </table>
+                <br/>
+
+                </div>
+                <div class="nappit">
+                   <button>Muokkaa</button>
+                   <button>Lisää tarjouspyynnölle</button>
+                </div>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="taimikonhoitoM">
+            <h1 class="paina">Taimikonhoito</h1>
+            <div id="wrapper" class="more">
+                <table class="w70">
+                    <tr>
+                        <td></td>
+                        <td>Tukki</td>
+                        <td>Kuitu</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Mänty</td>
+                        <td>0.2 m/ha</td>
+                        <td>0.1 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Kuusi</td>
+                        <td>2.7 m/ha</td>
+                        <td>7.2 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Raudaskoivu</td>
+                        <td>6 m/ha</td>
+                        <td>43.3 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Haapa</td>
+                        <td>0.1 m/ha</td>
+                        <td>2.7 m/ha</td>
+                    </tr>
+                </table>
+                <h1 class="paina">Lisätietoa toimenpiteestä</h1>
+                <div class="more">
+                    <a class="kysymysM"><i class="far fa-question-circle"></i></a>
+                    <div class="infoM">
+                        <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+                    </div>
+                    <div id="stage" class="koko">
+                        <div class="items-grow">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                        </div>
+                        <div class="items-nogrow">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                        </div>
+                    </div>
+                    <div id="sliderWrapper">
+                        <div id="sliderM"></div>
+                    </div>
+                    <div class="in">
+                    <h2>Selvennys toimenpiteestä</h2>
+                    <p>Taimikonhoidossa poistetaan huonolaatuiset taimet, jolloin taimikko kasvaa elinvoimaisempana ja se takaa paremman kasvun. Hoitamattoman taimikon elinvoimaisuus taas laskee ja se on alttiimpi tuhoille. Ajallaan hoidetusta taimikosta kertyy järeämpää puuta ensiharvennuksella, jolloin tuotto paranee.</p> 
+                </div>
+                <br/>
+                <table>
+                    <tr class="color">
+                        <th>Lisätiedot</th>
+                        <td></td>
+                    </tr>
+                    <tr class="color">
+                        <th>Vuosi</th>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Pinta-ala</th>
+                        <td>1.3 ha</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Menoarvio</th>
+                        <td>470 €</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Toteutusajankohta</th>
+                        <td></td>
+                    </tr>
+                </table>
+                <br/>
+
+                </div>
+                <div class="nappit">
+                   <button>Muokkaa</button>
+                   <button>Lisää tarjouspyynnölle</button>
+                </div>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="ensiharvennusM">
+            <h1 class="paina">Ensiharvennus</h1>
+            <div id="wrapper" class="more">
+                <table class="w70">
+                    <tr>
+                        <td></td>
+                        <td>Tukki</td>
+                        <td>Kuitu</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Mänty</td>
+                        <td>0.2 m/ha</td>
+                        <td>0.1 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Kuusi</td>
+                        <td>2.7 m/ha</td>
+                        <td>7.2 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Raudaskoivu</td>
+                        <td>6 m/ha</td>
+                        <td>43.3 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Haapa</td>
+                        <td>0.1 m/ha</td>
+                        <td>2.7 m/ha</td>
+                    </tr>
+                </table>
+                <h1 class="paina">Lisätietoa toimenpiteestä</h1>
+                <div class="more">
+                    <a class="kysymysM"><i class="far fa-question-circle"></i></a>
+                    <div class="infoM">
+                        <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+                    </div>
+                    <div id="stage" class="koko">
+                        <div class="items-grow">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                        </div>
+                        <div class="items-nogrow">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                        </div>
+                    </div>
+                    <div id="sliderWrapper">
+                        <div id="sliderM"></div>
+                    </div>
+                    <div class="in">
+                    <h2>Selvennys toimenpiteestä</h2>
+                    <p>Ensiharvennuksen tarkoituksena on varmistaa puiden kasvutila ja järeytyminen. Näin varmistetaan puuston elinvoimaisuus ja vähennetään alttiutta lumi-ja hyönteistuhoille. Ensiharvennuksessa tähdätään laadukkaaseen puustoon, joka järeydyttyään parantaa hakkuutuloja tulevaisuudessa.</p> 
+                </div>
+                <br/>
+                <table>
+                    <tr class="color">
+                        <th>Lisätiedot</th>
+                        <td></td>
+                    </tr>
+                    <tr class="color">
+                        <th>Vuosi</th>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Pinta-ala</th>
+                        <td>1.3 ha</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Menoarvio</th>
+                        <td>470 €</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Toteutusajankohta</th>
+                        <td></td>
+                    </tr>
+                </table>
+                <br/>
+
+                </div>
+                <div class="nappit">
+                   <button>Muokkaa</button>
+                   <button>Lisää tarjouspyynnölle</button>
+                </div>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="harvennusM">
+            <h1 class="paina">Harvennus</h1>
+            <div id="wrapper" class="more">
+                <table class="w70">
+                    <tr>
+                        <td></td>
+                        <td>Tukki</td>
+                        <td>Kuitu</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Mänty</td>
+                        <td>0.2 m/ha</td>
+                        <td>0.1 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Kuusi</td>
+                        <td>2.7 m/ha</td>
+                        <td>7.2 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Raudaskoivu</td>
+                        <td>6 m/ha</td>
+                        <td>43.3 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Haapa</td>
+                        <td>0.1 m/ha</td>
+                        <td>2.7 m/ha</td>
+                    </tr>
+                </table>
+                <h1 class="paina">Lisätietoa toimenpiteestä</h1>
+                <div class="more">
+                    <a class="kysymysM"><i class="far fa-question-circle"></i></a>
+                    <div class="infoM">
+                        <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+                    </div>
+                    <div id="stage" class="koko">
+                        <div class="items-grow">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                        </div>
+                        <div class="items-nogrow">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                        </div>
+                    </div>
+                    <div id="sliderWrapper">
+                        <div id="sliderM"></div>
+                    </div>
+                    <div class="in">
+                    <h2>Selvennys toimenpiteestä</h2>
+                    <p>Harvennuksessa poistetaan puustoa, jolloin varmistetaan jäävän puuston elinvoimaisuus. Harvennustarpeeseen vaikuttaa metsänomistajan tavoitteet ja metsän hoitohistoria. Harvennukset kannattaa tehdä yleisesti käytettyjen harvennusmallien mukaan, jotka perustuvat pohjapinta-alaan ja valtapituuteen. Harvennusta kannattaa suunnitella oman metsäasiantuntijan kanssa!</p> 
+                </div>
+                <br/>
+                <table>
+                    <tr class="color">
+                        <th>Lisätiedot</th>
+                        <td></td>
+                    </tr>
+                    <tr class="color">
+                        <th>Vuosi</th>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Pinta-ala</th>
+                        <td>1.3 ha</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Menoarvio</th>
+                        <td>470 €</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Toteutusajankohta</th>
+                        <td></td>
+                    </tr>
+                </table>
+                <br/>
+
+                </div>
+                <div class="nappit">
+                   <button>Muokkaa</button>
+                   <button>Lisää tarjouspyynnölle</button>
+                </div>
+            </div>
+        </div>
+<!--*******************************************************-->
+        <div id="uudistamisM">
+            <h1 class="paina">Uudistamishakkuu</h1>
+            <div id="wrapper" class="more">
+                <table class="w70">
+                    <tr>
+                        <td></td>
+                        <td>Tukki</td>
+                        <td>Kuitu</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Mänty</td>
+                        <td>0.2 m/ha</td>
+                        <td>0.1 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Kuusi</td>
+                        <td>2.7 m/ha</td>
+                        <td>7.2 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Raudaskoivu</td>
+                        <td>6 m/ha</td>
+                        <td>43.3 m/ha</td>
+                    </tr>
+                    <tr class="color">
+                        <td>Haapa</td>
+                        <td>0.1 m/ha</td>
+                        <td>2.7 m/ha</td>
+                    </tr>
+                </table>
+                <h1 class="paina">Lisätietoa toimenpiteestä</h1>
+                <div class="more">
+                    <a class="kysymysM"><i class="far fa-question-circle"></i></a>
+                    <div class="infoM">
+                        <p>Vetämällä hirvenpäästä näet miten metsäsi kasvaa ja kuinka valintasi vaikuttavat metsäsi tuottoon.</p>
+                    </div>
+                    <div id="stage" class="koko">
+                        <div class="items-grow">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-15" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow left-5" src='./assets/images/koivu_ta.svg' height="100">
+                            <img class="grow" src='./assets/images/koivu_ta.svg' height="100">
+                        </div>
+                        <div class="items-nogrow">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                            <img class="nogrow" src='./assets/images/kuusi_ta.svg' height="50">
+                        </div>
+                    </div>
+                    <div id="sliderWrapper">
+                        <div id="sliderM"></div>
+                    </div>
+                    <div class="in">
+                    <h2>Selvennys toimenpiteestä</h2>
+                    <p>Uudistamishakkuu kannattaa tehdä metsänomistajan tarpeiden mukaan. Viimeistään se kannattaa tehdä ennen kuin puuston arvokasvu laskee, jolloin puuston rahallinen arvo alenee. Uudistamishakkuusta poistetaan puusto, jotta metsän kasvatus voidaan aloittaa alusta. Metsä Group käyttää hakkuissaan maailmanlaajuisia sertifikaatteja, jotka takaavat metsien kestävän käytön. Uudistamishakkuu ja tulevan taimikon perustaminen kannattaa suunnitella oman metsäasiantuntijan kanssa.</p> 
+                </div>
+                <br/>
+                <table>
+                    <tr class="color">
+                        <th>Lisätiedot</th>
+                        <td></td>
+                    </tr>
+                    <tr class="color">
+                        <th>Vuosi</th>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Pinta-ala</th>
+                        <td>1.3 ha</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Menoarvio</th>
+                        <td>470 €</td>
+                    </tr>
+                    <tr class="color">
+                        <th>Toteutusajankohta</th>
+                        <td></td>
+                    </tr>
+                </table>
+                <br/>
+
+                </div>
+                <div class="nappit">
+                   <button>Muokkaa</button>
+                   <button>Lisää tarjouspyynnölle</button>
+                </div>
+            </div>
+        </div>
+        <img class="over" src="assets/images/pohja_mob.png">
+    </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src="http://static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/jquery.ui.touch-punch.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
